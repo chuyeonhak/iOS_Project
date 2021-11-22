@@ -1,7 +1,7 @@
 //
 //  ViewController.swift
 //  Swift_Half_View
-//
+//  GitStart by Chuchu Pro on 2021/10/07.
 //  Created by Chuchu Pro on 2021/10/07.
 //
 
@@ -12,7 +12,6 @@ import SwiftyJSON
 
 
 class ViewController: UIViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
