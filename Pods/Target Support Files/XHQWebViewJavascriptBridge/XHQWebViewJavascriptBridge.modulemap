@@ -1,0 +1,6 @@
+framework module XHQWebViewJavascriptBridge {
+  umbrella header "XHQWebViewJavascriptBridge-umbrella.h"
+
+  export *
+  module * { export * }
+}

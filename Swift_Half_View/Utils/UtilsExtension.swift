@@ -1,0 +1,35 @@
+//
+//  UIImageViewExtension.swift
+//  Swift_Half_View
+//
+//  Created by Chuchu Pro on 2021/10/11.
+//
+
+import Foundation
+import UIKit
+import Kingfisher
+
+extension UIImageView { // 전체화면을 뿌릴 때 킹피셔를 바로 뿌릴 수 있게 확장했습니다.
+    
+    func setImage(imageUrl: String) {
+        self.kf.setImage(with: URL(string: imageUrl))
+    }
+}
+extension UIColor {
+   convenience init(red: Int, green: Int, blue: Int) {
+       assert(red >= 0 && red <= 255, "Invalid red component")
+       assert(green >= 0 && green <= 255, "Invalid green component")
+       assert(blue >= 0 && blue <= 255, "Invalid blue component")
+
+       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+   }
+
+   convenience init(rgb: Int) {
+       self.init(
+           red: (rgb >> 16) & 0xFF,
+           green: (rgb >> 8) & 0xFF,
+           blue: rgb & 0xFF
+       )
+   }
+}
+

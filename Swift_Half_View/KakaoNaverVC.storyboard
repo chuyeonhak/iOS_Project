@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kakao NaverVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="KakaoNaverVC" id="Y6W-OH-hqX" customClass="KakaoNaverVC" customModule="Swift_Half_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nAo-Gv-gUp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </navigationBar>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLE-8V-4E3">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNm-sY-e2a">
+                                <rect key="frame" x="356.5" y="44" width="57.5" height="44"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="btn_tape_more">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="moreActionBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="3Mp-ql-z73"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-pn-HTi">
+                                <rect key="frame" x="0.0" y="44" width="57.5" height="39"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.left" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="21"/>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="homeBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T35-hg-zQI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWX-Cu-aNq">
+                                <rect key="frame" x="5" y="807" width="404" height="50"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="grN-6j-VuQ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="라이브 입장">
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="enterLiveClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="u2v-RY-7QM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xNm-sY-e2a" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="0dw-KY-9pU"/>
+                            <constraint firstItem="hLE-8V-4E3" firstAttribute="top" secondItem="nAo-Gv-gUp" secondAttribute="bottom" id="123-yy-kbx"/>
+                            <constraint firstItem="nAo-Gv-gUp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8wP-Gu-WDk"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hLE-8V-4E3" secondAttribute="trailing" id="E8a-V7-Acp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aWX-Cu-aNq" secondAttribute="trailing" constant="5" id="EiT-gA-Jsd"/>
+                            <constraint firstItem="rMu-pn-HTi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Hvw-7K-Q3P"/>
+                            <constraint firstItem="rMu-pn-HTi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="MEY-C5-HQc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aWX-Cu-aNq" secondAttribute="bottom" constant="5" id="Mga-dG-Q3b"/>
+                            <constraint firstItem="nAo-Gv-gUp" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="S29-8l-O78"/>
+                            <constraint firstItem="aWX-Cu-aNq" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="5" id="aET-fC-Xfq"/>
+                            <constraint firstItem="hLE-8V-4E3" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="hde-R8-NyB"/>
+                            <constraint firstAttribute="bottom" secondItem="hLE-8V-4E3" secondAttribute="bottom" id="jts-bY-JE4"/>
+                            <constraint firstItem="nAo-Gv-gUp" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="kid-Ma-PVT"/>
+                            <constraint firstItem="nAo-Gv-gUp" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="ktF-qT-JaB"/>
+                            <constraint firstItem="hLE-8V-4E3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="peB-dF-R0Z"/>
+                            <constraint firstItem="xNm-sY-e2a" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ubu-gC-cYt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="rMu-pn-HTi" id="iQS-Qv-fbW"/>
+                        <outlet property="enterLiveBtn" destination="aWX-Cu-aNq" id="y8f-St-9er"/>
+                        <outlet property="moreInfoBtn" destination="xNm-sY-e2a" id="e8L-4x-2cD"/>
+                        <outlet property="webView" destination="hLE-8V-4E3" id="7QJ-96-6WG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="87"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="btn_tape_more" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

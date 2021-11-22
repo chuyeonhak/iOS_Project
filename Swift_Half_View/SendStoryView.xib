@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SendStoryView" customModule="Swift_Half_View" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomLine" destination="xnG-EC-leV" id="xfi-BJ-kEl"/>
+                <outlet property="limitTextLabel" destination="bUa-tb-bpw" id="DSy-dL-Jlz"/>
+                <outlet property="sendBtn" destination="dNK-C1-3GZ" id="DH3-D9-u0u"/>
+                <outlet property="storyView" destination="A25-uR-K81" id="xEd-Bl-Zdk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SendStoryView" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ARx-MB-Ras">
+                    <rect key="frame" x="0.0" y="427" width="375" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hr9-6w-h2R">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="240"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사연보내기" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="80i-XJ-fy8">
+                                    <rect key="frame" x="20" y="10.5" width="78" height="24"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/300)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bUa-tb-bpw">
+                                    <rect key="frame" x="108" y="17" width="46.5" height="16"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.39954096080000001" green="0.39960259199999998" blue="0.39952749009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8QB-fz-zbl">
+                                    <rect key="frame" x="20" y="38" width="299.5" height="31.5"/>
+                                    <string key="text">듣고싶은 신청곡, 전하고싶은 사연을 BJ에게 전달해보세요.
+음란, 비방, 폭언 시 영구정지 될 수 있습니다.</string>
+                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                    <color key="textColor" red="0.39954096080000001" green="0.39960259199999998" blue="0.39952749009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dNK-C1-3GZ">
+                                    <rect key="frame" x="255" y="184.5" width="100" height="40"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="RpA-uo-kcG"/>
+                                        <constraint firstAttribute="height" constant="40" id="Zaw-zC-mRZ"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="Button">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="보내기">
+                                                <attributes>
+                                                    <font key="NSFont" size="14" name="AppleSDGothicNeo-Regular"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <state key="disabled">
+                                        <attributedString key="attributedTitle">
+                                            <fragment content="보내기">
+                                                <attributes>
+                                                    <font key="NSFont" metaFont="system" size="14"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="19"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="sendStoryBtn:" destination="-1" eventType="touchUpInside" id="ZIP-DD-rew"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVS-A3-lWJ">
+                                    <rect key="frame" x="327" y="10" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="4Gz-GK-8bs"/>
+                                        <constraint firstAttribute="height" constant="30" id="lWx-IH-mWD"/>
+                                    </constraints>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" image="send_story_dismiss"/>
+                                    <connections>
+                                        <action selector="closeViewBtn:" destination="-1" eventType="touchUpInside" id="VoE-wz-ytn"/>
+                                    </connections>
+                                </button>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A25-uR-K81">
+                                    <rect key="frame" x="20" y="79.5" width="335" height="100"/>
+                                    <color key="backgroundColor" red="0.93333339689999995" green="0.93333339689999995" blue="0.93333339689999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="hTL-46-Dr7"/>
+                                    </constraints>
+                                    <attributedString key="attributedText">
+                                        <fragment content="10자 이상 입력해주세욤">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="14"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.9137254901960784" green="0.93333333333333335" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="eVS-A3-lWJ" firstAttribute="top" secondItem="hr9-6w-h2R" secondAttribute="top" constant="10" id="041-R4-ile"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="240" id="4oC-sG-b3m"/>
+                                <constraint firstItem="8QB-fz-zbl" firstAttribute="top" secondItem="80i-XJ-fy8" secondAttribute="bottom" constant="3.5" id="G3B-eQ-8xy"/>
+                                <constraint firstItem="bUa-tb-bpw" firstAttribute="bottom" secondItem="80i-XJ-fy8" secondAttribute="bottom" constant="-1.5" id="Imc-L2-ptW"/>
+                                <constraint firstAttribute="bottom" secondItem="dNK-C1-3GZ" secondAttribute="bottom" constant="15.5" id="Kpq-b4-hU5"/>
+                                <constraint firstItem="A25-uR-K81" firstAttribute="leading" secondItem="hr9-6w-h2R" secondAttribute="leading" constant="20" id="PSm-cL-6ko"/>
+                                <constraint firstItem="80i-XJ-fy8" firstAttribute="leading" secondItem="hr9-6w-h2R" secondAttribute="leading" constant="20" id="Plj-d4-3o9"/>
+                                <constraint firstItem="A25-uR-K81" firstAttribute="top" secondItem="8QB-fz-zbl" secondAttribute="bottom" constant="10" id="Rpe-mk-lOl"/>
+                                <constraint firstAttribute="trailing" secondItem="A25-uR-K81" secondAttribute="trailing" constant="20" id="XLB-TC-qK9"/>
+                                <constraint firstAttribute="trailing" secondItem="eVS-A3-lWJ" secondAttribute="trailing" constant="18" id="Z7g-PM-bKA"/>
+                                <constraint firstItem="bUa-tb-bpw" firstAttribute="leading" secondItem="80i-XJ-fy8" secondAttribute="trailing" constant="10" id="acb-aS-PS0"/>
+                                <constraint firstItem="8QB-fz-zbl" firstAttribute="leading" secondItem="hr9-6w-h2R" secondAttribute="leading" constant="20" id="hYs-iv-Px6"/>
+                                <constraint firstAttribute="height" constant="240" id="i63-bJ-SAn"/>
+                                <constraint firstItem="80i-XJ-fy8" firstAttribute="top" secondItem="hr9-6w-h2R" secondAttribute="top" constant="10.5" id="pV0-Rd-ygt"/>
+                                <constraint firstAttribute="trailing" secondItem="dNK-C1-3GZ" secondAttribute="trailing" constant="20" id="qgJ-P9-zhh"/>
+                                <constraint firstItem="dNK-C1-3GZ" firstAttribute="top" secondItem="A25-uR-K81" secondAttribute="bottom" constant="5" id="xHk-CG-gpL"/>
+                                <constraint firstItem="bUa-tb-bpw" firstAttribute="top" secondItem="hr9-6w-h2R" secondAttribute="top" constant="17" id="xkR-aO-Gp9"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="H73-1F-q8B" appends="YES" id="yAv-Em-a14"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hr9-6w-h2R" firstAttribute="leading" secondItem="ARx-MB-Ras" secondAttribute="leading" id="2pp-pl-2kw"/>
+                        <constraint firstItem="hr9-6w-h2R" firstAttribute="leading" secondItem="ARx-MB-Ras" secondAttribute="leading" id="5sf-vg-Tg4"/>
+                        <constraint firstItem="hr9-6w-h2R" firstAttribute="top" secondItem="ARx-MB-Ras" secondAttribute="top" id="65j-29-dNy"/>
+                        <constraint firstAttribute="trailing" secondItem="hr9-6w-h2R" secondAttribute="trailing" id="6bb-OD-Fgv"/>
+                        <constraint firstAttribute="bottom" secondItem="hr9-6w-h2R" secondAttribute="bottom" id="grK-M8-zH3"/>
+                        <constraint firstAttribute="trailing" secondItem="hr9-6w-h2R" secondAttribute="trailing" id="pvS-Ea-jiN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1N-DJ-2Ly">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="427"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <connections>
+                        <action selector="closeViewBtn:" destination="-1" eventType="touchUpInside" id="Y6X-Zv-Zop"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="NCD-Fh-l9P"/>
+            <constraints>
+                <constraint firstItem="f1N-DJ-2Ly" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2sm-Mb-jo2"/>
+                <constraint firstItem="f1N-DJ-2Ly" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ix8-j2-Boh"/>
+                <constraint firstItem="ARx-MB-Ras" firstAttribute="top" secondItem="f1N-DJ-2Ly" secondAttribute="bottom" id="X0t-EJ-urj"/>
+                <constraint firstItem="ARx-MB-Ras" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="d83-vN-AFc"/>
+                <constraint firstAttribute="trailing" secondItem="f1N-DJ-2Ly" secondAttribute="trailing" id="jJ9-Z0-yX8"/>
+                <constraint firstItem="ARx-MB-Ras" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vLy-Ua-SH8"/>
+                <constraint firstAttribute="bottom" secondItem="ARx-MB-Ras" secondAttribute="bottom" id="xnG-EC-leV"/>
+            </constraints>
+            <point key="canvasLocation" x="131.15942028985509" y="273.88392857142856"/>
+        </view>
+        <tapGestureRecognizer id="H73-1F-q8B">
+            <connections>
+                <action selector="tabBackground:" destination="-1" id="sXU-PW-U5g"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="dNK-C1-3GZ">
+            <size key="intrinsicContentSize" width="37" height="28.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="send_story_dismiss" width="30" height="30"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

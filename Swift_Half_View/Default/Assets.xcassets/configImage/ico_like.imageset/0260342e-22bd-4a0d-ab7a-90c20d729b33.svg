@@ -1,0 +1,51 @@
+<svg id="ico_like" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+        opacity: 0;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+
+      .cls-5 {
+        fill: none;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.103" y1="0.048" x2="0.665" y2="0.823" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff6565"/>
+      <stop offset="1" stop-color="#ff345d"/>
+    </linearGradient>
+  </defs>
+  <g id="사각형_6753" data-name="사각형 6753" class="cls-1">
+    <rect class="cls-4" width="36" height="36"/>
+    <rect class="cls-5" x="0.5" y="0.5" width="35" height="35"/>
+  </g>
+  <g id="그룹_6089" data-name="그룹 6089" transform="translate(2.93 5.33)">
+    <g id="그룹_6084" data-name="그룹 6084">
+      <g id="그룹_6083" data-name="그룹 6083" transform="translate(0 0)">
+        <path id="패스_3044" data-name="패스 3044" class="cls-2" d="M126.974,248.808c-2.713,0-5.133,2.309-6.718,4.8-1.585-2.488-4-4.8-6.718-4.8a8.361,8.361,0,0,0-8.352,8.352,6.317,6.317,0,0,0,1.755,4.8l.317.417c.013.017.028.035.042.051L119.457,275.9a.756.756,0,0,0,.548.249h.012a.758.758,0,0,0,.544-.232c2.114-2.2,12.534-13.036,13.426-14.236a7.469,7.469,0,0,0,1.339-4.521A8.362,8.362,0,0,0,126.974,248.808Z" transform="translate(-105.186 -248.808)"/>
+      </g>
+    </g>
+    <g id="그룹_6086" data-name="그룹 6086" transform="translate(18.207 11.72)">
+      <g id="그룹_6085" data-name="그룹 6085" transform="translate(0 0)">
+        <path id="패스_3045" data-name="패스 3045" class="cls-3" d="M168.659,286.151l-5.638,6.037a.782.782,0,0,0,1.143,1.067l5.638-6.037a.782.782,0,1,0-1.143-1.067Z" transform="translate(-162.811 -285.903)"/>
+      </g>
+    </g>
+    <g id="그룹_6088" data-name="그룹 6088" transform="translate(15.877 19.982)">
+      <g id="그룹_6087" data-name="그룹 6087" transform="translate(0 0)">
+        <path id="패스_3046" data-name="패스 3046" class="cls-3" d="M155.836,312.28l-.172.172a.782.782,0,1,0,1.106,1.106l.172-.172a.782.782,0,1,0-1.106-1.106Z" transform="translate(-155.434 -312.052)"/>
+      </g>
+    </g>
+  </g>
+</svg>
